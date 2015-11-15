@@ -3,10 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
     <ListView
@@ -15,6 +11,8 @@
         android:layout_above="@+id/record_button"
         android:layout_below="@+id/add_button"
         android:id="@+id/listView"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
         >
 
     </ListView>
@@ -22,7 +20,6 @@
     <ImageButton
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/add_button"
         />
@@ -32,9 +29,7 @@
         android:layout_height="@dimen/button_height"
         android:id="@+id/search_button"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/listView"
         android:layout_alignStart="@+id/listView"
-        android:layout_toLeftOf="@id/add_button"
         />
 
     <ImageButton
@@ -42,7 +37,6 @@
         android:layout_height="@android:dimen/notification_large_icon_height"
         android:id="@+id/record_button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:baselineAlignBottom="false"
         android:clickable="true"
