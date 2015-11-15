@@ -30,6 +30,7 @@
         android:id="@+id/search_button"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/listView"
+        android:layout_toStartOf="@id/add_button"
         />
 
     <ImageButton
