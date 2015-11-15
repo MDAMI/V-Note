@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\mahad\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\mahad\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-1cf3cd9e467f342fb809e9002f39048a272f4b57.jar" />
+    </item>
+    <item
+        jar="C:\Users\mahad\AndroidStudioProjects\V-Note\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\mahad\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\classes-57e76487b8f720a9c9974d5db9f98f652c52a5ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\mahad\AndroidStudioProjects\V-Note\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\mahad\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\classes-acacf737cc09d9a8fd803943ea2299b017f3ff63.jar" />
+    </item>
+    <item
+        jar="C:\Users\mahad\AndroidStudioProjects\V-Note\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\mahad\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-37aaa7514d8a5bae6314ddca340ae823d1df430c.jar" />
+    </item>
+
+</items>

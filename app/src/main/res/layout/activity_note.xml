@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+    <ImageButton
+        android:id="@+id/note_back"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageButton
+        android:id="@+id/note_play"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_toRightOf="@+id/note_back"
+        android:layout_toEndOf="@+id/note_back"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/note_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/note_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ..."
+        android:textAlignment="gravity"
+        android:gravity="top"
+        />
+
+
+</RelativeLayout>
