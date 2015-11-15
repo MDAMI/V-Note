@@ -49,14 +49,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13182898">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state vertical-scroll-proportion="-28.724138">
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
               <folding>
                 <element signature="e#270#305#0" expanded="true" />
                 <element signature="e#331#366#0" expanded="true" />
@@ -70,14 +70,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_note.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_note.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_note.xml">
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="1334" selection-start-line="40" selection-start-column="1334" selection-end-line="40" selection-end-column="1334" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7577197">
+              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
                 <element signature="e#219#254#0" expanded="true" />
                 <element signature="e#280#315#0" expanded="true" />
@@ -1618,8 +1618,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/vnote/xfalcon/v_note/RecordActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_note.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_note.xml" />
       </list>
     </option>
   </component>
@@ -2121,19 +2121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.275862">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#325#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vnote/xfalcon/v_note/RecordActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2160,21 +2147,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_note.xml">
-      <provider selected="true" editor-type-id="android-designer">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="1334" selection-start-line="40" selection-start-column="1334" selection-end-line="40" selection-end-column="1334" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.275862">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#219#254#0" expanded="true" />
-            <element signature="e#280#315#0" expanded="true" />
-            <element signature="e#339#372#0" expanded="true" />
-            <element signature="e#399#432#0" expanded="true" />
-            <element signature="e#522#543#0" expanded="true" />
-            <element signature="e#574#596#0" expanded="true" />
-            <element signature="e#873#895#0" expanded="true" />
+            <element signature="e#325#347#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2184,8 +2165,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13182898">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state vertical-scroll-proportion="-28.724138">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
           <folding>
             <element signature="e#270#305#0" expanded="true" />
             <element signature="e#331#366#0" expanded="true" />
@@ -2194,6 +2175,25 @@
             <element signature="e#831#852#0" expanded="true" />
             <element signature="e#883#905#0" expanded="true" />
             <element signature="e#1137#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_note.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7577197">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <element signature="e#219#254#0" expanded="true" />
+            <element signature="e#280#315#0" expanded="true" />
+            <element signature="e#339#372#0" expanded="true" />
+            <element signature="e#399#432#0" expanded="true" />
+            <element signature="e#522#543#0" expanded="true" />
+            <element signature="e#574#596#0" expanded="true" />
+            <element signature="e#873#895#0" expanded="true" />
           </folding>
         </state>
       </provider>

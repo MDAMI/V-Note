@@ -38,7 +38,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ...This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ..."
+        android:text="This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ..."
         android:textAlignment="gravity"
         android:gravity="top"
         />
