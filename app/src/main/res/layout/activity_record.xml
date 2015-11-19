@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     >
 
-    <ImageButton
+    <Button
+        android:text="back"
         android:id="@+id/note_back"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
@@ -22,7 +23,8 @@
 
         />
 
-    <ImageButton
+    <Button
+        android:text="Stop Recording"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
         android:id="@+id/stop_record_button"
