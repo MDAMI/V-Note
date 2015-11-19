@@ -33,7 +33,7 @@
         android:paddingStart="@dimen/activity_horizontal_margin"
         android:paddingEnd="@dimen/activity_horizontal_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        android:text="This is a test not to see how the multi line text system works. This note specifically needs to be longer than the width of the screen in order to properly show ..."
+        android:text="PENIS. This note specifically needs to be longer than the width of the screen in order to properly show ..."
         android:textAlignment="gravity"
         android:gravity="top"
         />
