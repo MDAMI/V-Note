@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">V-Note</string>
+    <string name="time_format">mm:ss</string>
 </resources>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -25,7 +26,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/add_button"
-        android:onClick="addButtonPressed"
         />
 
     <ImageButton
@@ -36,7 +36,6 @@
         android:layout_alignLeft="@+id/listView"
         android:layout_alignStart="@+id/listView"
         android:layout_toLeftOf="@id/add_button"
-        android:onClick="searchButtonPressed"
         />
 
     <ImageButton
@@ -50,6 +49,5 @@
         android:clickable="true"
         android:focusable="true"
         android:importantForAccessibility="yes"
-        android:onClick="recordButtonPressed"
         />
 </RelativeLayout>
