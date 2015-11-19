@@ -9,18 +9,18 @@
         <dex dex="C:\Users\Wesley\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-ec53f44f0bab6a01640875c8c28368d2d75d47ee.jar" />
     </item>
     <item
-        jar="C:\Users\Wesley\AndroidStudioProjects\V-Note\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="C:\Users\Wesley\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\classes-c5689c5631b5aa475d286f5297fed19865226c46.jar" />
-    </item>
-    <item
         jar="C:\Users\Wesley\AndroidStudioProjects\V-Note\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
         <dex dex="C:\Users\Wesley\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\classes-ff190f5e320d6fb23393bcbea08ca8c385855360.jar" />
+    </item>
+    <item
+        jar="C:\Users\Wesley\AndroidStudioProjects\V-Note\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\Wesley\AndroidStudioProjects\V-Note\app\build\intermediates\pre-dexed\debug\classes-c5689c5631b5aa475d286f5297fed19865226c46.jar" />
     </item>
     <item
         jar="C:\Users\Wesley\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
