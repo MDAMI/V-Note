@@ -11,6 +11,7 @@
         android:layout_height="@dimen/button_height"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:onClick="goHome"
         />
 
     <EditText
@@ -20,7 +21,6 @@
         android:layout_alignBottom="@+id/note_back"
         android:layout_toEndOf="@+id/note_back"
         android:layout_alignParentEnd="true"
-
         />
 
     <Button
