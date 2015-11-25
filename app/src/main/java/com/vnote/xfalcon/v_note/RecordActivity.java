@@ -6,6 +6,7 @@ import android.media.MediaRecorder;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
@@ -40,30 +41,18 @@ public class RecordActivity extends AppCompatActivity {
 
         stop.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                chronometer.stop();
-            }
-        });
-
-
-
-    }
-
-    public void buttonTapped(View view){
-        switch(view.getId()){
-            case R.id.start_record_button:
-                try{
-                    beginRecording();
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
-                break;
-            case R.id.stop_record_button:
                 try{
                     stopRecording();
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-                break;
+                chronometer.stop();
+            }
+        });
+    }
+
+    public void buttonTapped(View view){
+        switch(view.getId()){
             case R.id.play_record_button:
                 try{
                     playRecording();
@@ -94,6 +83,8 @@ public class RecordActivity extends AppCompatActivity {
 
     }
     private void stopRecording(){
+
+        Log.e("test", "THIS HAS BEEN REACHED");
         if (recorder != null)
         recorder.stop();
 
@@ -104,7 +95,6 @@ public class RecordActivity extends AppCompatActivity {
         mPlayer.setDataSource(OUTPUT_FILE);
         mPlayer.prepare();
         mPlayer.start();
-
 
     }
 

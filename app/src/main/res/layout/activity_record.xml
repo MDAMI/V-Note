@@ -43,8 +43,7 @@
         android:clickable="true"
         android:focusable="true"
         android:layout_above="@+id/play_record_button"
-        android:layout_alignParentStart="true"
-        android:onClick="buttonTapped" />
+        android:layout_alignParentStart="true"/>
 
     <Button
         android:text="Play Recording"
