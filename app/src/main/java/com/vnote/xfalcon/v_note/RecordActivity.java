@@ -7,6 +7,7 @@ import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -15,35 +16,23 @@ public class RecordActivity extends AppCompatActivity {
     private MediaPlayer mPlayer;
     private MediaRecorder recorder;
     private String OUTPUT_FILE;
-    //private File[] files;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
         OUTPUT_FILE = Environment.getExternalStorageDirectory()+"/recorder.3gpp";
-    }
-
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        if(intent.getStringExtra("callMethod").equals("beginRecording")){
-            try {
-                beginRecording();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            beginRecording();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
     }
 
     public void buttonTapped(View view){
         switch(view.getId()){
-            case R.id.start_record_button:
-                try{
-                    beginRecording();
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
-                break;
+
             case R.id.stop_record_button:
                 try{
                     stopRecording();
@@ -74,11 +63,12 @@ public class RecordActivity extends AppCompatActivity {
         recorder.setOutputFile(OUTPUT_FILE);
         recorder.prepare();
         recorder.start();
-        //saveFile(outFile);
+        Toast.makeText(getApplicationContext(), "Recording Started", Toast.LENGTH_LONG).show();
 
     }
     private void stopRecording(){
         if (recorder != null)
+            Toast.makeText(getApplicationContext(), "Recording Stopped", Toast.LENGTH_LONG).show();
         recorder.stop();
 
     }
@@ -88,19 +78,9 @@ public class RecordActivity extends AppCompatActivity {
         mPlayer.setDataSource(OUTPUT_FILE);
         mPlayer.prepare();
         mPlayer.start();
-
-
     }
 
-   /* private void saveFile(File file) {
-        int i = 0;
-        while (files[i]!= null)
-        {
-            i++;
-        }
-        files[i] = file;
 
-    } */
 
     private void ditchMediaRecorder() {
         if(recorder != null)

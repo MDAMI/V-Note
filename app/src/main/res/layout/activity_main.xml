@@ -40,10 +40,11 @@
         android:onClick="searchButtonPressed"
         />
 
-    <ImageButton
+    <Button
+        android:text="RECORD"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
-        android:id="@+id/record_button"
+        android:id="@+id/start_record_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

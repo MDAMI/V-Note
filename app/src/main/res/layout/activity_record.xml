@@ -23,7 +23,7 @@
         android:layout_alignParentEnd="true"
         />
 
-    <Button
+    <!--<Button
         android:text="Start Recording"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
@@ -33,7 +33,7 @@
         android:layout_above="@+id/stop_record_button"
         android:layout_alignParentStart="true"
         android:nestedScrollingEnabled="false"
-        android:onClick="buttonTapped" />
+        android:onClick="buttonTapped" /> -->
 
     <Button
         android:text="Stop Recording"
