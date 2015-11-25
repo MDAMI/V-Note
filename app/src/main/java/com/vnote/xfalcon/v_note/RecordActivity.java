@@ -96,7 +96,6 @@ public class RecordActivity extends AppCompatActivity {
     private void stopRecording(){
         if (recorder != null)
         recorder.stop();
-        chronometer.stop();
 
     }
     private void playRecording()  throws Exception{
