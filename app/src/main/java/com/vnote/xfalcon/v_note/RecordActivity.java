@@ -15,6 +15,7 @@ public class RecordActivity extends AppCompatActivity {
     private MediaPlayer mPlayer;
     private MediaRecorder recorder;
     private String OUTPUT_FILE;
+    //private File[] files;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,7 @@ public class RecordActivity extends AppCompatActivity {
         recorder.setOutputFile(OUTPUT_FILE);
         recorder.prepare();
         recorder.start();
+        //saveFile(outFile);
 
     }
     private void stopRecording(){
@@ -76,7 +78,19 @@ public class RecordActivity extends AppCompatActivity {
         mPlayer.prepare();
         mPlayer.start();
 
+
     }
+
+   /* private void saveFile(File file) {
+        int i = 0;
+        while (files[i]!= null)
+        {
+            i++;
+        }
+        files[i] = file;
+
+    } */
+
     private void ditchMediaRecorder() {
         if(recorder != null)
             recorder.release();
