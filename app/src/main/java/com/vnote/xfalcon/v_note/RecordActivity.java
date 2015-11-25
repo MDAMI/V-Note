@@ -21,9 +21,20 @@ public class RecordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
-
         OUTPUT_FILE = Environment.getExternalStorageDirectory()+"/recorder.3gpp";
     }
+
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if(intent.getStringExtra("callMethod").equals("beginRecording")){
+            try {
+                beginRecording();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     public void buttonTapped(View view){
         switch(view.getId()){
             case R.id.start_record_button:
