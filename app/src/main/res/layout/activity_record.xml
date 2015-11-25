@@ -40,7 +40,6 @@
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
         android:id="@+id/stop_record_button"
-
         android:clickable="true"
         android:focusable="true"
         android:layout_above="@+id/play_record_button"
@@ -58,16 +57,17 @@
         android:id="@+id/play_record_button"
         android:onClick="buttonTapped" />
 
-    <EditText
+    <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
+        android:id="@+id/chrono"
         android:inputType="time"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/record_clock"
-        android:text="00:00"
+        android:text="Chronometer"
         />
+
 
 
 </RelativeLayout>
