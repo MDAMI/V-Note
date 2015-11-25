@@ -7,6 +7,9 @@ import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Chronometer;
+
 
 import java.io.File;
 
@@ -15,6 +18,10 @@ public class RecordActivity extends AppCompatActivity {
     private MediaPlayer mPlayer;
     private MediaRecorder recorder;
     private String OUTPUT_FILE;
+    Chronometer chronometer;
+    Button stop;
+
+
     //private File[] files;
 
     @Override
@@ -22,17 +29,23 @@ public class RecordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
         OUTPUT_FILE = Environment.getExternalStorageDirectory()+"/recorder.3gpp";
-    }
-
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        if(intent.getStringExtra("callMethod").equals("beginRecording")){
-            try {
-                beginRecording();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            beginRecording();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        chronometer = (Chronometer) findViewById(R.id.chrono);
+        stop = (Button) findViewById(R.id.stop_record_button);
+        chronometer.start();
+
+        stop.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                chronometer.stop();
+            }
+        });
+
+
+
     }
 
     public void buttonTapped(View view){
@@ -74,12 +87,16 @@ public class RecordActivity extends AppCompatActivity {
         recorder.setOutputFile(OUTPUT_FILE);
         recorder.prepare();
         recorder.start();
+
+
+
         //saveFile(outFile);
 
     }
     private void stopRecording(){
         if (recorder != null)
         recorder.stop();
+        chronometer.stop();
 
     }
     private void playRecording()  throws Exception{
@@ -91,16 +108,6 @@ public class RecordActivity extends AppCompatActivity {
 
 
     }
-
-   /* private void saveFile(File file) {
-        int i = 0;
-        while (files[i]!= null)
-        {
-            i++;
-        }
-        files[i] = file;
-
-    } */
 
     private void ditchMediaRecorder() {
         if(recorder != null)
