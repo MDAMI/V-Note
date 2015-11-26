@@ -11,6 +11,7 @@
         android:layout_height="@dimen/button_height"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:onClick="goHome"
         />
 
     <EditText
@@ -20,32 +21,52 @@
         android:layout_alignBottom="@+id/note_back"
         android:layout_toEndOf="@+id/note_back"
         android:layout_alignParentEnd="true"
-
         />
+
+    <!--<Button
+        android:text="Start Recording"
+        android:layout_width="fill_parent"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:id="@+id/start_record_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_above="@+id/stop_record_button"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="false"
+        android:onClick="buttonTapped" />-->
 
     <Button
         android:text="Stop Recording"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
         android:id="@+id/stop_record_button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:baselineAlignBottom="false"
         android:clickable="true"
         android:focusable="true"
-        />
+        android:layout_above="@+id/play_record_button"
+        android:layout_alignParentStart="true"/>
 
-    <EditText
+    <Button
+        android:text="Play Recording"
+        android:layout_width="fill_parent"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/play_record_button"
+        android:onClick="buttonTapped" />
+
+    <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
+        android:id="@+id/chrono"
         android:inputType="time"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/record_clock"
-        android:text="00:00"
-        android:editable="false"
+        android:text="Chronometer"
         />
+
 
 
 </RelativeLayout>
