@@ -69,7 +69,7 @@ public class RecordActivity extends AppCompatActivity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
+/*
         switch (requestCode) {
             case RESULT_SPEECH: {
                 if (resultCode == RESULT_OK && null != data) {
@@ -77,12 +77,12 @@ public class RecordActivity extends AppCompatActivity {
                     ArrayList<String> text = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 
-                    txtText.setText(text.get(0));
+                  //  txtText.setText(text.get(0));
                 }
                 break;
             }
 
-        }
+        }*/
     }
 
 

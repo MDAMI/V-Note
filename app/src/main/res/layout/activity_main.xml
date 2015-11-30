@@ -26,8 +26,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:backgroundTint="@color/colorPrimary"
-        android:onClick="addButtonPressed"/>
-    <!--android:src="@mipmap/add_circle"-->
+        android:onClick="addButtonPressed"
+        android:src="@mipmap/ic_add" />
 
 
     <ImageButton
@@ -39,11 +39,11 @@
         android:layout_alignStart="@+id/listView"
         android:layout_toLeftOf="@id/add_button"
         android:backgroundTint="@color/colorPrimary"
-        android:onClick="searchButtonPressed"/>
-    <!--android:src="@mipmap/search"-->
+        android:onClick="searchButtonPressed"
+        android:src="@mipmap/ic_search"/>
 
 
-    <Button
+    <ImageButton
         android:id="@+id/start_record_button"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
@@ -56,6 +56,5 @@
         android:focusable="true"
         android:importantForAccessibility="yes"
         android:onClick="recordButtonPressed"
-        android:text="RECORD"/>
-    <!--android:src="@mipmap/mic"-->
+        android:src="@mipmap/ic_mic"/>
 </RelativeLayout>

@@ -2,6 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     >
 
     <ImageButton
@@ -11,6 +15,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:onClick="goHome"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@mipmap/ic_back"
         />
 
     <ImageButton
@@ -18,7 +24,10 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@mipmap/ic_play"
+        />
 
     <EditText
         android:id="@+id/note_text"
