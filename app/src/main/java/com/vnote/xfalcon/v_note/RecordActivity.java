@@ -29,7 +29,7 @@ public class RecordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
-        OUTPUT_FILE = Environment.getExternalStorageDirectory()+"/recorder.3gpp";
+        OUTPUT_FILE = Environment.getExternalStorageDirectory() + "/recorder.3gpp";
         try {
             beginRecording();
         } catch (Exception e) {
@@ -41,9 +41,9 @@ public class RecordActivity extends AppCompatActivity {
 
         stop.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                try{
+                try {
                     stopRecording();
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
                 chronometer.stop();
@@ -51,22 +51,24 @@ public class RecordActivity extends AppCompatActivity {
         });
     }
 
-    public void buttonTapped(View view){
-        switch(view.getId()){
+    public void buttonTapped(View view) {
+        switch (view.getId()) {
             case R.id.play_record_button:
-                try{
+                try {
                     playRecording();
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
                 break;
         }
     }
-    private void beginRecording() throws Exception{
+
+    private void beginRecording() throws Exception {
         ditchMediaRecorder();
         File outFile = new File(OUTPUT_FILE);
 
         if (outFile.exists())
+            //noinspection ResultOfMethodCallIgnored
             outFile.delete();
 
         recorder = new MediaRecorder();
@@ -78,18 +80,19 @@ public class RecordActivity extends AppCompatActivity {
         recorder.start();
 
 
-
         //saveFile(outFile);
 
     }
-    private void stopRecording(){
+
+    private void stopRecording() {
 
         Log.e("test", "THIS HAS BEEN REACHED");
         if (recorder != null)
-        recorder.stop();
+            recorder.stop();
 
     }
-    private void playRecording()  throws Exception{
+
+    private void playRecording() throws Exception {
         ditchMediaPlayer();
         mPlayer = new MediaPlayer();
         mPlayer.setDataSource(OUTPUT_FILE);
@@ -99,23 +102,22 @@ public class RecordActivity extends AppCompatActivity {
     }
 
     private void ditchMediaRecorder() {
-        if(recorder != null)
+        if (recorder != null)
             recorder.release();
     }
+
     private void ditchMediaPlayer() {
-        if(mPlayer != null)
-        {
-            try{
+        if (mPlayer != null) {
+            try {
                 mPlayer.release();
-            }catch (Exception e)
-            {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
 
 
-    public void goHome(View view){
+    public void goHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

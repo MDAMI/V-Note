@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <Button
-        android:text="back"
         android:id="@+id/note_back"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:onClick="goHome"
-        />
+        android:text="back" />
 
     <EditText
+        android:id="@+id/record_title"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
-        android:id="@+id/record_title"
         android:layout_alignBottom="@+id/note_back"
-        android:layout_toEndOf="@+id/note_back"
         android:layout_alignParentEnd="true"
-        />
+        android:layout_toEndOf="@+id/note_back" />
 
     <!--<Button
         android:text="Start Recording"
@@ -36,37 +33,34 @@
         android:onClick="buttonTapped" />-->
 
     <Button
-        android:text="Stop Recording"
+        android:id="@+id/stop_record_button"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
-        android:id="@+id/stop_record_button"
+        android:layout_above="@+id/play_record_button"
+        android:layout_alignParentStart="true"
         android:clickable="true"
         android:focusable="true"
-        android:layout_above="@+id/play_record_button"
-        android:layout_alignParentStart="true"/>
+        android:text="Stop Recording" />
 
     <Button
-        android:text="Play Recording"
+        android:id="@+id/play_record_button"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
-        android:clickable="true"
-        android:focusable="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/play_record_button"
-        android:onClick="buttonTapped" />
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="buttonTapped"
+        android:text="Play Recording" />
 
     <Chronometer
+        android:id="@+id/chrono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chrono"
-        android:inputType="time"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textSize="@dimen/record_clock"
-        android:text="Chronometer"
-        />
-
+        android:layout_centerVertical="true"
+        android:inputType="time"
+        android:textSize="@dimen/record_clock" />
 
 
 </RelativeLayout>
