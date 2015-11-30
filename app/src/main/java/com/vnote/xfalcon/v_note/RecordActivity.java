@@ -1,18 +1,25 @@
 package com.vnote.xfalcon.v_note;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Environment;
+import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.TextView;
 
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RecordActivity extends AppCompatActivity {
 
@@ -21,15 +28,12 @@ public class RecordActivity extends AppCompatActivity {
     private String OUTPUT_FILE;
     Chronometer chronometer;
     Button stop;
-
-
-    //private File[] files;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
-        OUTPUT_FILE = Environment.getExternalStorageDirectory() + "/recorder.3gpp";
+        OUTPUT_FILE = Environment.getExternalStorageDirectory()+"/recorder.3gpp";
         try {
             beginRecording();
         } catch (Exception e) {
@@ -63,7 +67,26 @@ public class RecordActivity extends AppCompatActivity {
         }
     }
 
-    private void beginRecording() throws Exception {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case RESULT_SPEECH: {
+                if (resultCode == RESULT_OK && null != data) {
+
+                    ArrayList<String> text = data
+                            .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+
+                    txtText.setText(text.get(0));
+                }
+                break;
+            }
+
+        }
+    }
+
+
+    private void beginRecording() throws Exception{
         ditchMediaRecorder();
         File outFile = new File(OUTPUT_FILE);
 

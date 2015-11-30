@@ -20,6 +20,15 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/note_back" />
 
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/txtText"
+        android:layout_alignBottom="@+id/record_title"
+        android:layout_toEndOf="@+id/note_back"
+        android:layout_alignParentEnd="true"
+        />
+
     <!--<Button
         android:text="Start Recording"
         android:layout_width="fill_parent"
