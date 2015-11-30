@@ -15,7 +15,9 @@
         android:layout_alignParentTop="true"
         android:onClick="goHome"
         android:src="@mipmap/ic_back"
-        android:backgroundTint="@color/colorPrimary"/>
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="@string/backDescription"
+        android:focusable="true"/>
 
     <EditText
         android:id="@+id/record_title"
@@ -55,7 +57,9 @@
         android:clickable="true"
         android:focusable="true"
         android:backgroundTint="@color/colorPrimary"
-        android:src="@mipmap/ic_stop"/>
+        android:src="@mipmap/ic_stop"
+        android:contentDescription="@string/stopRecordDescription"
+        />
 
     <ImageButton
         android:id="@+id/play_record_button"
@@ -67,7 +71,8 @@
         android:focusable="true"
         android:onClick="buttonTapped"
         android:backgroundTint="@color/colorPrimary"
-        android:src="@mipmap/ic_play"/>
+        android:src="@mipmap/ic_play"
+        android:contentDescription="@string/playRecordDescription"/>
 
     <Chronometer
         android:id="@+id/chrono"

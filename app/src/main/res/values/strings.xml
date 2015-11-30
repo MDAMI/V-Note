@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">V-Note</string>
     <string name="time_format">mm:ss</string>
+    <string name="addDescription">Tap this button to add a new note.</string>
+    <string name="searchDescription">Tap this button to search your notes with text, or hold to search with voice.</string>
+    <string name="recordDescription">Tap this button to record a new note.</string>
+    <string name="stopRecordDescription">Tap this button to stop recording.</string>
+    <string name="playRecordDescription">Tap this button to play your recording.</string>
+    <string name="backDescription">Tap this button to go back to the home screen.</string>
 </resources>

@@ -17,6 +17,8 @@
         android:onClick="goHome"
         android:backgroundTint="@color/colorPrimary"
         android:src="@mipmap/ic_back"
+        android:contentDescription="@string/backDescription"
+        android:focusable="true"
         />
 
     <ImageButton
@@ -27,6 +29,8 @@
         android:layout_centerHorizontal="true"
         android:backgroundTint="@color/colorPrimary"
         android:src="@mipmap/ic_play"
+        android:contentDescription="@string/playRecordDescription"
+        android:focusable="true"
         />
 
     <EditText
