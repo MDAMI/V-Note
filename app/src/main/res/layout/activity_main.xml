@@ -15,41 +15,36 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_above="@+id/start_record_button"
-        android:layout_below="@+id/add_button"
-        android:focusable="true">
-
+        android:layout_below="@+id/search_button">
 
     </ListView>
 
-    <ImageButton
+    <!--<ImageButton
         android:id="@+id/add_button"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:backgroundTint="@color/colorPrimary"
-        android:onClick="addButtonPressed"
-        android:src="@mipmap/ic_add"
-        android:contentDescription="@string/addDescription"
-        android:focusable="true"
-    />
+        android:onClick="addButtonPressed"/>-->
+    <!--android:src="@mipmap/add_circle"-->
 
 
     <ImageButton
-        android:id="@+id/search_button"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/button_height"
-        android:layout_alignLeft="@+id/listView"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/listView"
-        android:layout_toLeftOf="@id/add_button"
-        android:backgroundTint="@color/colorPrimary"
-        android:onClick="searchButtonPressed"
-        android:src="@mipmap/ic_search"
-        android:contentDescription="@string/searchDescription"/>
+    android:id="@+id/search_button"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/button_height"
+    android:layout_alignLeft="@+id/listView"
+    android:layout_alignParentTop="true"
+    android:layout_alignStart="@+id/listView"
+    android:backgroundTint="@color/colorPrimary"
+    android:onClick="searchButtonPressed"/>
+    <!--android:layout_toLeftOf="@id/add_button"-->
+
+    <!--android:src="@mipmap/search"-->
 
 
-    <ImageButton
+    <Button
         android:id="@+id/start_record_button"
         android:layout_width="fill_parent"
         android:layout_height="@android:dimen/notification_large_icon_height"
@@ -62,8 +57,15 @@
         android:focusable="true"
         android:importantForAccessibility="yes"
         android:onClick="recordButtonPressed"
-        android:src="@mipmap/ic_mic"
-        android:contentDescription="@string/recordDescription"
-        />
+        android:text="RECORD"/>
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:id="@+id/searchField"
+        android:layout_above="@+id/listView"
+        android:layout_alignTop="@+id/search_button"
+        android:layout_alignParentStart="true" />
+    <!--android:src="@mipmap/mic"-->
 </RelativeLayout>

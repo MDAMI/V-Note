@@ -7,14 +7,12 @@ package com.vnote.xfalcon.v_note;
 public class NoteContainer {
     private String title;
     private String text;
-    private String transcript;
-    private String audio;
+    private int id;
 
-    public NoteContainer(String title_in, String text_in, String transcript_in, String audio_in){
+    public NoteContainer(int id_in, String title_in, String text_in){
         title = title_in;
         text = text_in;
-        transcript = transcript_in;
-        audio = audio_in;
+        id = id_in;
     }
 
     public String getTitle() {
@@ -33,19 +31,16 @@ public class NoteContainer {
         this.text = text;
     }
 
-    public String getTranscript() {
-        return transcript;
+    public int getId() {
+        return id;
     }
 
-    public void setTranscript(String transcript) {
-        this.transcript = transcript;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getAudio() {
-        return audio;
-    }
-
-    public void setAudio(String audio) {
-        this.audio = audio;
+    @Override
+    public String toString() {
+        return title + "";
     }
 }
